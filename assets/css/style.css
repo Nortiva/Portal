@@ -774,6 +774,18 @@ nav a:hover {
 .entry[data-category="performance"]{ --cat-color:var(--cat-performance); }
 .entry[data-category="atencao"]{ --cat-color:var(--cat-atencao); }
 
+.entry-link {
+  color: #0196b2;
+  font-weight: 600;
+  text-decoration: none;
+  transition: .2s ease;
+}
+
+.entry-link:hover {
+  text-decoration: underline;
+  opacity: .8;
+}
+
 /* ========================================
    FIM DA PARTE 2
 ======================================== */
