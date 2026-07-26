@@ -57,6 +57,8 @@
 
     --cat-atencao:#ff0000;
 
+    --cat-desligamento:#000000;    
+
 
     /* Tipografia */
 
@@ -628,6 +630,18 @@ nav a:hover {
 
 }
 
+.entry-alt-desc{
+
+    color:var(--text-secondary);
+
+    font-size:.77rem;
+
+    max-width:60ch;
+
+    margin-bottom:1.6rem;
+
+}
+
 .entry-image{
 
     border-radius:var(--radius-md);
@@ -773,6 +787,7 @@ nav a:hover {
 .entry[data-category="institucional"]{ --cat-color:var(--cat-institucional); }
 .entry[data-category="performance"]{ --cat-color:var(--cat-performance); }
 .entry[data-category="atencao"]{ --cat-color:var(--cat-atencao); }
+.entry[data-category="desligamento"]{ --cat-color:var(--cat-desligamento); }
 
 .entry-link {
   color: #0196b2;
@@ -823,7 +838,19 @@ nav a:hover {
     --cat-color: rgb(255, 0, 128);
 }
 
+.entry-video {
+  margin-top: 24px;
+  overflow: hidden;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  aspect-ratio: 16 / 9;
+}
 
+.entry-video iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
 
 /* ========================================
    FIM DA PARTE 2
