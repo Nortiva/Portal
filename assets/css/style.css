@@ -787,6 +787,45 @@ nav a:hover {
 }
 
 /* ========================================
+   CATEGORIA CELEBRATION (RGB DINÂMICO)
+======================================== */
+
+@keyframes rgb-cycler {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+}
+
+.cat-badge--celebration {
+    /* Cor base (Rosa choque) para a matriz arco-íris */
+    --celebration-base: rgb(255, 0, 128);
+    
+    background: rgba(255, 0, 128, 0.08) !important;
+    color: var(--celebration-base) !important;
+    border: 1px solid rgba(255, 0, 128, 0.2) !important;
+    
+    /* Garante o formato de pílula arredondada sem sobras quadradas */
+    border-radius: 999px !important;
+    overflow: hidden !important;
+    background-clip: padding-box !important;
+    
+    /* Aplica a animação sem distorcer o layout */
+    animation: rgb-cycler 6s linear infinite !important;
+}
+
+/* Força a bolinha interna a seguir a mesma cor da animação */
+.cat-badge--celebration .cat-dot {
+    background-color: rgb(255, 0, 128) !important;
+    border-radius: 50% !important;
+}
+
+/* Ajuste do nó da timeline no hover */
+.entry[data-category="celebration"]:hover {
+    --cat-color: rgb(255, 0, 128);
+}
+
+
+
+/* ========================================
    FIM DA PARTE 2
 ======================================== */
 
