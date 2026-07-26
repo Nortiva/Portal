@@ -45,7 +45,7 @@
 
     --cat-correcao:#f59e0b;
 
-    --cat-seguranca:#ef4444;
+    --cat-seguranca:#41330f;
 
     --cat-cloud:#38bdf8;
 
@@ -55,7 +55,7 @@
 
     --cat-performance:#84cc16;
 
-    --cat-avisos:#4c00ff;
+    --cat-atencao:#ff0000;
 
 
     /* Tipografia */
@@ -772,7 +772,7 @@ nav a:hover {
 .entry[data-category="design"]{ --cat-color:var(--cat-design); }
 .entry[data-category="institucional"]{ --cat-color:var(--cat-institucional); }
 .entry[data-category="performance"]{ --cat-color:var(--cat-performance); }
-.entry[data-category="avisos"]{ --cat-color:var(--cat-avisos); }
+.entry[data-category="atencao"]{ --cat-color:var(--cat-atencao); }
 
 /* ========================================
    FIM DA PARTE 2
